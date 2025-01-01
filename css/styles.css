@@ -58,15 +58,15 @@ a {
   background-color: var(--black-color);
   position: relative;
 }
+
 .logo {
-  position: absolute;
-  width: 48.3%;
-}
-.logo-lar {
   position: absolute;
   width: 20%;
   left: 18%;
   top: 22%;
+}
+.logo-svg {
+  width: 100%;
 }
 
 .link-button {
@@ -93,6 +93,7 @@ a {
 .link.whatsapp {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   color: var(--white-color);
   background: #814a94;
   backdrop-filter: blur(15.150253295898438px);
@@ -121,9 +122,7 @@ a {
   width: 28%;
   margin-left: 4%;
 }
-.logo {
-  display: none;
-}
+
 .main-text {
   position: absolute;
   text-align: center;
@@ -241,7 +240,6 @@ a {
   }
   @media screen and (min-width: 390px) {
     html {
-      /* font-size: 23px; */
       font-size: 48px;
     }
   }
@@ -265,14 +263,23 @@ a {
       font-size: 60px;
     }
   }
-  .logo {
+
+  .styled-text {
+    font-size: 70%;
+    top: 0;
     display: block;
     left: 50%;
     transform: translate(-50%);
     margin-top: 4%;
   }
-  .logo-lar {
-    display: none;
+
+  .logo {
+    display: block;
+    width: 48%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 4%;
   }
 
   .link-button {
@@ -315,7 +322,6 @@ a {
   .main-text {
     width: 100%;
     left: 0;
-    /* top: 6%; */
     top: 18.1%;
   }
 
